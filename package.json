@@ -1,0 +1,28 @@
+{
+  "name": "jismesh-js",
+  "version": "0.1.0",
+  "description": "JavaScript port of python jismesh package",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshizow/jismesh-js.git"
+  },
+  "keywords": [
+    "geo",
+    "geocode",
+    "geolocation",
+    "geometry"
+  ],
+  "author": "Yoshitaro Makise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoshizow/jismesh-js/issues"
+  },
+  "homepage": "https://github.com/yoshizow/jismesh-js#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
