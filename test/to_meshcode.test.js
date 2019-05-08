@@ -42,3 +42,29 @@ for (let p of TEST_PARAMETERS) {
     expect(toMeshCode(p.lat, p.lon, p.level)).toBe(p.meshCode);
   });
 }
+
+test("Latitude out of range", () => {
+  expect(() => {
+    toMeshCode(-0.1, lonTokyoTower, 1);
+  }).toThrowError(RangeError);
+
+  expect(() => {
+    toMeshCode(66.66, lonTokyoTower, 1);
+  }).toThrowError(RangeError);
+});
+
+test("Longitude out of range", () => {
+  expect(() => {
+    toMeshCode(latTokyoTower, 99.99, 1);
+  }).toThrowError(RangeError);
+
+  expect(() => {
+    toMeshCode(latTokyoTower, 180, 1);
+  }).toThrowError(RangeError);
+});
+
+test("Unsupported level", () => {
+  expect(() => {
+    toMeshCode(latTokyoTower, lonTokyoTower, 0);
+  }).toThrowError(RangeError);
+});

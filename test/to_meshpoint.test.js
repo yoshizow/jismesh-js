@@ -50,7 +50,7 @@ const TEST_PARAMETERS = [
 ];
 
 function testHelper({ meshCode, latMultiplier, lonMultiplier, expectedLat, expectedLon }) {
-  const { lat, lon } = toMeshPoint(meshCode, latMultiplier, lonMultiplier);
+  const [lat, lon] = toMeshPoint(meshCode, latMultiplier, lonMultiplier);
 
   expect(lat).toBeCloseTo(expectedLat, 7);
   expect(lon).toBeCloseTo(expectedLon, 7);

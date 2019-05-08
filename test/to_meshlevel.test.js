@@ -22,3 +22,9 @@ for (let p of TEST_PARAMETERS) {
     expect(toMeshLevel(p.meshCode)).toBe(p.level);
   });
 }
+
+test("Invalid meshcode", () => {
+  expect(() => {
+    toMeshLevel('0');
+  }).toThrowError(/Unsupported mesh code/);
+});
