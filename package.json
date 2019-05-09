@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/yoshizow/jismesh-js#readme",
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   }
 }

@@ -1,4 +1,4 @@
-const { toMeshLevel } = require('../lib/jismesh.js');
+const { toMeshLevel } = require('../');
 
 const TEST_PARAMETERS = [
   { label: 'Lv1',   level: 1,     meshCode: '5339'        },

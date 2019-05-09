@@ -420,7 +420,7 @@ const _toMeshPointProcs = {
   2000: _toMeshPoint2000,
 };
 
-function toMeshPoint(meshCode, latMultiplier, lonMultiplier) {
+function toMeshPoint(meshCode, latMultiplier = 0, lonMultiplier = 0) {
   meshCode = String(meshCode);
   const level = toMeshLevel(meshCode);
   const { south, west, unitLat, unitLon } = _toMeshPointProcs[level](meshCode);

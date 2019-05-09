@@ -1,4 +1,4 @@
-const { toMeshCode } = require('../lib/jismesh.js');
+const { toMeshCode } = require('../');
 
 const latTokyoTower = 35.658581;   // 東京タワー緯度 (度) 世界測地系
 const lonTokyoTower = 139.745433;  // 東京タワー経度 (度) 世界測地系

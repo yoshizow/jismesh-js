@@ -1,4 +1,4 @@
-const { toMeshPoint } = require('../lib/jismesh.js');
+const { toMeshPoint } = require('../');
 
 const DICT_LEVEL_UNIT = {
   1: [40/60, 1],
