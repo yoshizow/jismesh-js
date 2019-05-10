@@ -3,6 +3,8 @@ jismesh-js
 
 [![Build Status](https://travis-ci.com/yoshizow/jismesh-js.svg?branch=master)](https://travis-ci.com/yoshizow/jismesh-js)
 
+Utilities for the Japanese regional grid system defined in Japanese Industrial Standards (JIS X 0410 地域メッシュ).
+
 python の [jismesh パッケージ](https://pypi.org/project/jismesh/) を JavaScript に移植したものです。
 
 対応地域メッシュコード
@@ -29,6 +31,14 @@ python の [jismesh パッケージ](https://pypi.org/project/jismesh/) を Java
 ```bash
 npm install jismesh-js
 ```
+
+または、CDN から読み込む場合
+
+```html
+<script src="https://unpkg.com/jismesh-js/dist/jismesh.min.js"></script>
+```
+
+グローバル変数 `jismesh` が定義されます。
 
 使用例
 ------
