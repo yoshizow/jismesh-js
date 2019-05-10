@@ -4,19 +4,25 @@
   "description": "JavaScript port of python jismesh package",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode development && webpack --mode production",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yoshizow/jismesh-js.git"
   },
+  "files": [
+    "index.js",
+    "src/",
+    "dist/"
+  ],
   "keywords": [
     "geo",
     "geocode",
     "geolocation",
     "geometry"
   ],
-  "author": "Yoshitaro Makise",
+  "author": "Yoshitaro Makise <yoshizow@turtlewalk.org>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yoshizow/jismesh-js/issues"
