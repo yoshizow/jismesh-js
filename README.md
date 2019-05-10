@@ -1,7 +1,9 @@
 jismesh-js
 ==========
 
-python の (jismesh パッケージ)[https://pypi.org/project/jismesh/] を JavaScript に移植したものです。
+[![Build Status](https://travis-ci.com/yoshizow/jismesh-js.svg?branch=master)](https://travis-ci.com/yoshizow/jismesh-js)
+
+python の [jismesh パッケージ](https://pypi.org/project/jismesh/) を JavaScript に移植したものです。
 
 対応地域メッシュコード
 ----------------------
