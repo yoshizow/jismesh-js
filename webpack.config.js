@@ -6,6 +6,7 @@ module.exports = (env, argv) => {
     output: {
       libraryTarget: 'umd',
       library: 'jismesh',
+      globalObject: 'this',
       filename: prod ? 'jismesh.min.js' : 'jismesh.js',
       path: __dirname + '/dist',
     },
