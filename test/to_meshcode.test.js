@@ -68,3 +68,7 @@ test("Unsupported level", () => {
     toMeshCode(latTokyoTower, lonTokyoTower, 0);
   }).toThrowError(RangeError);
 });
+
+test("Umeda", () => {
+  expect(toMeshCode(34.705132, 135.497101, 3)).toBe('52350349');
+});

@@ -42,7 +42,7 @@ function _toMeshCodeLv2(lat, lon) {
   const cellLv1 = _toMeshCodeLv1(lat, lon);
   const y = Math.floor((lat - cellLv1.south) / _unitLv2Lat);
   const x = Math.floor((lon - cellLv1.west)  / _unitLv2Lon);
-  const code = cellLv1.code + (10 * y + x);
+  const code = cellLv1.code + y + x;
   const south = cellLv1.south + y * _unitLv2Lat;
   const west  = cellLv1.west  + x * _unitLv2Lon;
   return { south, west, code };
@@ -52,7 +52,7 @@ function _toMeshCodeLv3(lat, lon) {
   const cellLv2 = _toMeshCodeLv2(lat, lon);
   const y = Math.floor((lat - cellLv2.south) / _unitLv3Lat);
   const x = Math.floor((lon - cellLv2.west)  / _unitLv3Lon);
-  const code = cellLv2.code + (10 * y + x);
+  const code = cellLv2.code + y + x;
   const south = cellLv2.south + y * _unitLv3Lat;
   const west  = cellLv2.west  + x * _unitLv3Lon;
   return { south, west, code };
@@ -108,7 +108,7 @@ function _toMeshCode16000(lat, lon) {
   const cellLv1 = _toMeshCodeLv1(lat, lon);
   const y = Math.floor((lat - cellLv1.south) / _unit16000Lat);
   const x = Math.floor((lon - cellLv1.west)  / _unit16000Lon);
-  const code = cellLv1.code + (10 * (y * 2) + (x * 2)) + '7';
+  const code = cellLv1.code + (y * 2) + (x * 2) + '7';
   return { code };
 }
 
@@ -116,7 +116,7 @@ function _toMeshCode8000(lat, lon) {
   const cellLv1 = _toMeshCodeLv1(lat, lon);
   const y = Math.floor((lat - cellLv1.south) / _unit8000Lat);
   const x = Math.floor((lon - cellLv1.west)  / _unit8000Lon);
-  const code = cellLv1.code + (10 * y + x) + '6';
+  const code = cellLv1.code + y + x + '6';
   const south = cellLv1.south + y * _unit8000Lat;
   const west  = cellLv1.west  + x * _unit8000Lon;
   return { south, west, code };
@@ -152,7 +152,7 @@ function _toMeshCode2000(lat, lon) {
   const cellLv2 = _toMeshCodeLv2(lat, lon);
   const y = Math.floor((lat - cellLv2.south) / _unit2000Lat);
   const x = Math.floor((lon - cellLv2.west)  / _unit2000Lon);
-  const code = cellLv2.code + (10 * (y * 2) + (x * 2)) + '5';
+  const code = cellLv2.code + (y * 2) + (x * 2) + '5';
   return { code };
 }
 
